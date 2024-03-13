@@ -45,8 +45,8 @@
                 <div class="state-1" ng-show="state == 1">
                     <div class="row">
                         <div class="col-2 mt-3 " ng-repeat="card in cards">
-                            <img ng-if="card.s==0" src="../img/0.png" width="80" height="80" ng-click="imgClick(card)">
-                            <img ng-if="card.s==1" ng-src="../img/{{card.t}}.png" width="80" height="80">
+                            <img ng-if="card.s==0" src="./img/0.png" width="80" height="80" ng-click="imgClick(card)">
+                            <img ng-if="card.s==1" ng-src="./img/{{card.t}}.png" width="80" height="80">
                         </div>
                     </div>
                     <button class="btn btn-danger mt-3" ng-click="state=0">ออกจากเกม</button>

@@ -121,7 +121,7 @@
                 <div className="div">
                     <button className="btn btn-success" onClick={() => props.game.start()}>เริ่มเล่น</button>
                     &nbsp;
-                    <a href="../index.html" className="btn btn-danger">กลับหน้าหลัก</a>
+                    <a href="./index.html" className="btn btn-danger">กลับหน้าหลัก</a>
                 </div>
             )
         }
@@ -153,9 +153,9 @@
             render(){
                 var m = <div></div>
                 if(this.state.s == 0) 
-                    m = <img className="mt-3" src={"../img/0.png"} width="80" height="80" onClick={() => this.imgClick()}></img>
+                    m = <img className="mt-3" src={"./img/0.png"} width="80" height="80" onClick={() => this.imgClick()}></img>
                 else if(this.state.s == 1)   
-                    m = <img className="mt-3" src={"../img/"+this.props.t+".png"} width="80" height="80"></img>
+                    m = <img className="mt-3" src={"./img/"+this.props.t+".png"} width="80" height="80"></img>
                 return <div className="col-2">{m}</div>
             }
             imgClick(){
